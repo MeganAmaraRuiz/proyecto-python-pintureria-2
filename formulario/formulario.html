@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" href="../imagenes/favicon.ico">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <title>Paint Store</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+			<img src="../imagenes/logopaintstore.png" alt="logo de la empresa">
+		</div>
+		<div class="titulos">
+			<h1 class="titulo">Paint Store</h1>
+			<h2 class="subtitulo">Dale alegria a tu hogar</h2>
+		</div>
+		
+	</header>
+	<nav class="nav">
+		<a href="../index.html" class="nav-link">Inicio</a>
+        <a href="../empresa/empresa.html" class="nav-link">Empresa</a>
+        <a href="" class="nav-link">Categorias</a>
+        <a href="" class="nav-link">Sucursales</a>
+        <a href="" class="nav-link">Contacto</a>
+        <a href="" class="nav-link">Nuestras marcas</a>
+	</nav>
+	<main>
+		<script>
+			localStorage.clear();
+			sessionStorage.clear();
+		</script>
+		<section class="parrafo">
+			<h3 class="h3">Si necesitas asesoramiento tecnico personalizado, no dudes en contactarnos llenando el formulario de contacto.</h3>
+		</section>
+		<section class="formulario">
+			<form name="f1" action="enviar.html" method="GET" onsubmit="return validacion()">
+				<table class="tabla">
+					<tr>
+						<td>Nombre: </td>
+						<td><input type="text" id="nombre" size="40" maxlength="20"  /></td>
+						<td id="mensaje0"></td>
+					</tr>
+					<tr>
+						<td>Apellido: </td>
+						<td><input type="text" id="apellido" size="40" maxlength="20"  /></td>
+						<td id="mensaje1"></td>
+					</tr>
+						<td>Edad: </td>
+						<td><input type="number" id="edad"  /></td>
+						<td id="mensaje2"></td>
+					</tr>
+					<tr>
+						<td>DNI: </td>
+						<td><input type="number" id="dni" size="8" maxlength="8"  /></td>
+						<td id="mensaje5"></td>
+					</tr>
+					<tr>
+						<td>Fecha de nacimiento: </td>
+						<td><input type="date" id="fnac" /></td>
+					</tr>
+					<tr>
+						<td>E-mail: </td>
+						<td><input type="email" id="email" /></td>
+						<td id="mensaje3"></td>
+					</tr>
+					<tr>
+						<td>Tel: </td>
+						<td><input type="tel" id="telefono" /></td>
+					</tr>
+					<tr>
+						<td>Cel: </td>
+						<td><input type="tel" id="celular" /></td>
+						<td id="mensaje4"></td>
+					</tr>
+					<tr>
+						<td>Busco pinturas para: </td>
+						<td><input type="checkbox" name="pinturas" id="interiores">
+							<label for="interiores">Interiores</label>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="checkbox" name="pinturas" id="exteriores">Exteriores</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="checkbox" name="pinturas" id="vehiculo">Vehiculo</td>
+					</tr>
+					<tr>
+						<td>Color de la pintura: </td>
+						<td><input type="color" name="color" id="colores"  /></td>
+					</tr>
+					<tr>
+						<td>Cantidad que desea comprar: </td>
+						<td><input type="number" name="cantidad" id="cantidad"  /></td>
+					</tr>
+					<tr>
+						<td>Dejanos tu consulta: </td>
+						<td>
+							<textarea name="consulta" id="consulta" rows="10" cols="40"></textarea>
+						</td>
+					</tr>
+					<tr> 
+						<td class="vacia"></td>
+					</tr>
+					<tr>
+						<td class="vacia"></td>
+					</tr>
+					<tr>
+						<td class="vacia"></td>
+					</tr>
+					<tr>
+						<td class="vacia"></td>
+					</tr>
+					<tr>
+						<td class="vacia"></td>
+					</tr>
+					<tr>
+						<td class="vacia"></td>
+					</tr>
+					<tr>
+						<td class="vacia"></td>
+					</tr> 
+					<tr>
+						<td><input type="submit" value="Enviar datos"></td>
+						<td><input type="reset" value="Borrar todos los campos"></td>
+					</tr>
+				</table>
+			</form>
+			<script>
+				function validacion()
+				{
+					valor=document.getElementById("nombre").value;
+					if (valor == null || valor.length == 0)
+				  	{
+						document.getElementById("mensaje0").innerHTML = "Tenes que completar el nombre";
+						elemento = document.getElementById("nombre");
+						elemento.focus();
+						return false;
+					}
+					valor1=document.getElementById("apellido").value;
+					if (valor1 == null || valor1.length == 0)
+					{
+						document.getElementById("mensaje1").innerHTML = "Debes poner tu apellido";
+						elemento1 = document.getElementById("apellido");
+						elemento1.focus();
+						return false;
+					}
+					valor2=document.getElementById("edad").value;
+					if (valor2 == null || valor2.length == 0)
+					{
+						document.getElementById("mensaje2").innerHTML = "Debes colocar tu edad";
+						elemento1 = document.getElementById("edad");
+						elemento1.focus();
+						return false;
+					}	
+					if (valor2 < 18)
+					{
+						document.getElementById("mensaje2").innerHTML = "Debes ser mayor de 18";
+						elemento1 = document.getElementById("edad");
+						elemento1.focus();
+						return false;	
+				    }
+					valor3=document.getElementById("email").value;
+					if (valor3 == null || valor3.length == 0)
+				  	{
+						document.getElementById("mensaje3").innerHTML = "Debes completar con tu e-mail";
+						elemento2 = document.getElementById("email");
+						elemento2.focus();
+						return false;
+					}
+
+					valor4=document.getElementById("celular").value;
+					if (valor4 == null || valor4.length == 0)
+				  	{
+						document.getElementById("mensaje4").innerHTML = "Campo obligatorio";
+						elemento3 = document.getElementById("celular");
+						elemento3.focus();
+						return false;
+
+					}
+					valor5=document.getElementById("dni").value;
+					if (valor5 == null || valor5.length == 0 || valor5.length != 8)
+					{
+						document.getElementById("mensaje5").innerHTML = "Ingrese su DNI sin puntos";
+						elemento3 = document.getElementById("dni");
+						elemento3.focus();
+						return false;
+					}
+
+
+
+
+
+						return true;
+				}
+			</script>
+		</section>
+	</main>
+	<footer>
+		<div class="contacto">
+            <p style="color: white">Contacto: 11-4278-3146</p>
+            <p style="color:white" class="email">E-mail: <a href="">paintstore@gmail.com</a></p>
+            <div class="telefono"></div>
+        	<div class="sobre"></div>
+        </div>
+        <div class="ubicacion">
+        	<div class="mapa"></div>
+                <p class="ubicados">Estamos ubicados en: </p><iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.52067178487!2d-58.4344997250034!3d-34.61628035816048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca439cae6e81%3A0x262db0ba6d79fcbe!2sAv.%20Rivadavia%204736-4670%2C%20C1424%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1713997170315!5m2!1sen!2sar" width="600" height="450" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+</body>
+</html>

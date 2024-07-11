@@ -1,0 +1,334 @@
+body{
+	display: grid;
+	margin: 0%;
+	font-family: Arial, Helvetica, sans-serif;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 3fr 1fr 4fr 3fr;
+    grid-template-areas: "Header" 
+                         "Navegador"
+                         "Main"
+                         "Footer";
+    grid-row-gap: 1rem;
+}
+
+.header{
+    grid-area: Header; background-color: rgb(147, 52, 243);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    padding: 1rem;
+    background-size: contain;
+    width: 100%;
+    height: 25rem;
+}
+
+.nav{
+    grid-area: Navegador; background-color: rgb(147, 52, 243);
+    display: flex;
+	width: 100vw;
+    height: 7vh;
+    background-color:rgb(147, 52, 243);
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    grid-area: Main; background-color: white;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 3fr 3fr 3fr;
+    width: 100%;
+    height: 100%;
+    grid-row-gap: 2em;
+    padding: 2em;
+    bottom: 6em;
+    margin-left: 4em;
+    text-align: center;
+
+}
+.pinturasext{
+    width: 100%;
+    height: 100%;
+}
+
+#exteriores{
+    columns: black;
+    text-align: center;
+    grid-column: 1/4;
+    font-size: 4rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#ext1{
+    background: url(../../imagenes/ext1.jpg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    object-fit: fill;
+    width: 50%;
+    height: 100%;
+    transition: all 1s;
+    
+}
+#ext2{
+    background: url(../../imagenes/ext2.jpg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    object-fit: fill;
+    width: 40%;
+    height: 100%;
+    transition: all 1s;
+   
+}
+#ext3{
+    background: url(../../imagenes/ext3.jpg);
+    background-repeat: no-repeat;
+    background-size: 73%;
+    object-fit: fill;
+    width: 40%;
+    height: 100%;
+    transition: all 1s;
+   
+}
+#ext4{
+    background: url(../../imagenes/ext4.jpg);
+    background-repeat: no-repeat;
+    background-size: 73%;
+    object-fit: fill;
+    width: 40%;
+    height: 100%;
+    transition: all 1s;
+    
+}
+#ext5{
+    background: url(../../imagenes/ext5.jpg);
+    background-repeat: no-repeat;
+    background-size: 73%;
+    object-fit: fill;
+    width: 50%;
+    height: 100%;
+    transition: all 1s;
+}
+#ext6{
+    background: url(../../imagenes/ext6.jpg);
+    background-repeat: no-repeat;
+    background-size: 73%;
+    object-fit: fill;
+    width: 40%;
+    height: 100%;
+    transition: all 1s;
+    
+}
+#ext7{background: url(../../imagenes/ext7.jpg);
+    background-repeat: no-repeat;
+    background-size: 73%;
+    object-fit: fill;
+    width: 40%;
+    height: 100%;
+    transition: all 1s;
+    
+}
+#ext8{background: url(../../imagenes/ext8.jpg);
+    background-repeat: no-repeat;
+    background-size: 73%;
+    object-fit: fill;
+    width: 40%;
+    height: 100%;
+    transition: all 1s;
+}
+#ext1:hover{             
+    transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+}
+#ext2:hover{             
+    transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+}
+#ext3:hover{             
+    transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+}
+#ext4:hover{             
+    transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+}
+#ext5:hover{             
+    transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+}
+#ext6:hover{             
+    transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+}
+#ext7:hover{             
+    transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+}
+#ext8:hover{             
+    transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+}
+.footer{
+    grid-area: Footer; background-color: rgb(147, 52, 243);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    justify-content: space-between;
+    padding: 1rem;
+    grid-column-gap: 1rem;
+    margin-top: 10em;
+
+}
+.logo{
+    display: flex;
+    width: 10rem;
+    height: 20rem;
+
+}
+.titulos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-row-gap: 0%;
+
+}
+.titulo{
+    color: white;
+    font-size: 6rem;
+    justify-content: center;
+
+}
+.subtitulo{
+	text-shadow: -7px 7px 4px rgb(0, 0, 0);
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-style: oblique;
+    color:  white;
+    font-size: 3rem;
+}
+.nav-link{
+    font-size: 1.2em;
+    color: white;
+    padding-right: 70px;
+    text-decoration: none;
+}
+.nav-link:hover{
+    color:rgb(214, 49, 49);
+}
+.mapa{
+    background-image: url(../../imagenes/map.png);
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+    grid-column: 1/4;
+}
+.telefono{
+    background-image: url(../../imagenes/tel.png);
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+}
+.sobre{
+    background-image: url(../../imagenes/sobre.png);
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+}
+.contacto{
+    font-size: 1.2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 3rem;
+}
+.email{
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+}
+.email:visited{
+    color: blue;
+    text-decoration: none;
+}
+.iframe{
+    width: 15rem;
+    height: 10rem;
+}
+
+.ubicacion{
+    color: white;
+    font-size: 1em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4fr;
+    height: 1rem;
+}
+
+.menciones{
+    color: white;
+}
+@media (min-width: 600px) {
+    body{
+        max-width:540px;
+    }
+    .titulo{
+        max-width: 400px;
+
+    }
+
+
+
+}
+@media (min-width:800px) {
+    body{
+        max-width: 760px;
+    }
+    .titulo{
+        max-width: 600px;
+
+    }
+}
+@media (min-width:1200px) {
+    body{
+        max-width:1050px;
+    }
+}
+@media (min-width:2000px) {
+    body{
+        max-width: 1950px;
+    }
+}
+@media (min-width:2500px) {
+    body{
+        max-width: 2320px;
+    }
+}
+@media (min-width:3000px) {
+    body{
+        max-width:2970px;
+    }
+}
+@media (min-width:3600px) {
+    body{
+        max-width:3320px;
+    }
+}
+@media (min-width:4200px) {
+    body{
+        max-width:3800px;
+    }
+}
+

@@ -1,0 +1,368 @@
+body{
+	display: flex;
+	position: absolute;
+	margin: 0%;
+	font-family: Arial, Helvetica, sans-serif;
+	flex-direction: column;
+}
+.header{
+	display: flex;
+	background-color:rgb(147, 52, 243);
+    min-width: 100vw;
+    height: 40vh;
+    padding: 20px;
+    background-size: contain;
+    position: relative;
+    overflow: auto;
+}
+.logo{
+	display: flex;
+	width: 30%;
+	height: 100%;
+}
+.titulos{
+	position: relative;
+	bottom: 40px;
+	width: 60%;
+	height: 100%;
+}
+.titulo{
+	color:white;
+	font-size: 6em;
+}
+.subtitulo{
+	text-shadow: -7px 7px 4px rgb(0, 0, 0);
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    position: relative;
+    font-style: oblique;
+    color:  white;
+    font-size: 3em;
+    bottom: 30px;
+    left: 50px;
+}
+.nav{
+	display: flex;
+	width: 100vw;
+    height: 7vh;
+    background-color:rgb(147, 52, 243);
+    padding: 2px;
+    margin-top:20px;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-link{
+    font-size: 1.2em;
+    color: white;
+    padding-right: 70px;
+    text-decoration: none;
+}
+.nav-link:hover{
+    color:rgb(214, 49, 49);
+}
+main{ 
+	display: grid;
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 3fr 3fr 3fr;
+    padding: 2em;
+    margin-top: 4em;
+    margin-left: 3em;
+    
+
+
+}
+
+#interiores{
+    grid-column: 1/4;
+    color: black;
+    font-size: 6rem;
+    text-align: center;
+    text-decoration:double;
+  
+}
+
+
+#p1{
+    background: url(../../imagenes/pint1.jpg);
+    background-repeat: no-repeat;
+    background-size: 73%;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    
+}
+#p2{
+    background: url(../../imagenes/pint2.jpg);
+    background-repeat: no-repeat;
+    background-size: 68%;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    
+}
+#p3{
+    background: url(../../imagenes/pint3.jpg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    
+}
+#p4{
+    background: url(../../imagenes/pint4.jpg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    
+}
+#p5{
+    background: url(../../imagenes/pint5.jpg);
+    background-repeat: no-repeat;
+    background-size:70%;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    
+}
+#p6{
+    background: url(../../imagenes/pint6.jpg);
+    background-repeat: no-repeat;
+    background-size: 68%;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+#p7{
+    background: url(../../imagenes/pint7.jpg);
+    background-repeat: no-repeat;
+    background-size: 78%;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+#p1:hover{             
+    transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+}
+#p2:hover{             
+    transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+}
+#p3:hover{             
+    transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+}
+#p4:hover{             
+    transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+}
+#p5:hover{             
+    transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+}
+#p6:hover{             
+    transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+}
+#p7:hover{             
+    transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+}
+
+.cuadros{
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	justify-content: space-around;
+	align-items: center;
+
+}
+.section{
+	display: flex;
+	width: 200px;
+    height: 300px;
+    background-color: brown;
+    margin-bottom: 100px;
+    border-radius: 10%;
+
+}
+#caja1{
+	background: url(exteriores4.jpg);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    transition: all 1s;
+
+}
+#caja2{
+	background: url(interiores2.jpg);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    transition: all 1s;
+
+}
+#caja3{
+	background: url(autoblanco2.jpg);
+	transition: all 1s;
+
+}
+#caja1:hover{             /* Transformacion/transicion de la caja1 */
+    transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+}
+
+#caja2:hover{             /* Transformacion/transicion de la caja2 */
+    box-shadow: -40px 40px 40px grey;
+    transform: translate(40px, -20px);
+    -webkit-transform: translate(40px, -20px);
+    -ms-transform: translate(40px, -20px);
+}
+
+
+#caja3:hover{             /* Transformacion/transicion de la caja 3*/
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -ms-transform:rotate(15deg);
+}
+.parrafomain{
+	position: absolute;
+	top: 500px;
+	text-align: center;
+    font-size: 2em;
+
+}
+
+.resaltarps{
+    background-color:magenta;
+
+}
+footer{
+	padding: 20px;
+    width: 100vw;
+    height: 28vh;
+    background-color:rgb(147, 52, 243);
+    font-size: 1.3em;
+    display: flex;
+    position: relative;
+    background: contain;
+    top: 120px;
+    overflow: auto;
+    justify-content: flex-start;
+}
+.contacto{
+	position: relative;
+}
+.email{
+	position: relative;
+	top: 40px;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+}
+.email:visited{
+    color: blue;
+    text-decoration: none;
+}
+.iframe{
+    width: 200px;
+    height: 100px;
+}
+.ubicacion{
+	position: relative;
+	left: 440px;
+	font-size: 0.7em;
+    color:white;
+    bottom: 40px;
+}
+.mapa{
+	position: relative;
+    background-image: url(../../imagenes/map.png);
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+    top: 40px;
+    left: 160px;
+}
+.telefono{
+	position: relative;
+    background-image: url(../../imagenes/tel.png);
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+    bottom: 120px;
+    left: 230px;
+
+}
+.sobre{
+	position: relative;
+    background-image: url(../../imagenes/sobre.png);
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+    bottom: 60px;
+    left: 340px;
+
+}
+@media (min-width: 600px) {
+    .header{
+        max-width:540px;
+    }
+}
+@media (min-width:800px) {
+    .header{
+        max-width: 760px;
+    }
+}
+@media (min-width:1200px) {
+    .header{
+        max-width:1050px;
+    }
+}
+@media (min-width:2000px) {
+    .header{
+        max-width: 1950px;
+    }
+}
+@media (min-width:2500px) {
+    .header{
+        max-width: 2320px;
+    }
+}
+@media (min-width:3000px) {
+    .header{
+        max-width:2970px;
+    }
+}
+@media (min-width:3600px) {
+    .header{
+        max-width:3320px;
+    }
+}
+@media (min-width:4200px) {
+    .header{
+        max-width:3800px;
+    }
+}
+
